@@ -1,8 +1,18 @@
+import java.util.Scanner;
+
 public class Main {
 
     public static void main(String[] args) {
 
-        System.out.println(PasswordGenerator.generatePassword(12));
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Longueur du mot de passe souhaitée :");
+        int length;
+        do {
+            length = sc.nextInt();
+        } while (length <= 0);
+
+        System.out.println("Votre mot de passe : " + PasswordGenerator.generatePassword(length));
 
     }
 
