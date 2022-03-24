@@ -1,3 +1,5 @@
 # folders
 .idea
 target
+out
+src/main/java/META-INF

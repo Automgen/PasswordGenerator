@@ -6,11 +6,11 @@ public class Main {
 
         Scanner sc = new Scanner(System.in);
 
-        System.out.println("Longueur du mot de passe souhaitée :");
+        System.out.println("Longueur du mot de passe souhaitée (4 min) :");
         int length;
         do {
             length = sc.nextInt();
-        } while (length <= 0);
+        } while (length <= 4);
 
         System.out.println("Votre mot de passe : " + PasswordGenerator.generatePassword(length));
 
