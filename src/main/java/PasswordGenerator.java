@@ -152,6 +152,6 @@ public class PasswordGenerator {
      * @return Un entier pseudo-alétoire entre {@code min} et {@code max}.
      */
     private static int randomIntInRange(int min, int max) {
-        return random.nextInt((max + 1) -min) + min;
+        return random.nextInt(min, max + 1);
     }
 }
